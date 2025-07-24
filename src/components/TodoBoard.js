@@ -6,8 +6,8 @@ const TodoBoard = ({ todoList, getTasks }) => {
       <h2 className="font-bold text-[26px]">📝 TODO LIST</h2>
       <div className="flex flex-wrap gap-[15px] p-[10px]">
         {todoList.length > 0 ? (
-          todoList.map((item, index) => (
-            <TodoItem key={index} item={item} getTasks={getTasks} />
+          todoList.map((item) => (
+            <TodoItem key={item._id} item={item} getTasks={getTasks} />
           ))
         ) : (
           <h2>There is no Item to show</h2>

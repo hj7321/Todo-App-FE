@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import api from "../utils/api";
 
 const buttonStyle =
-  "rounded-[4px] bg-red-300 hover:bg-red-400 text-white text-[12px] px-[8px] py-[4px] h-fit w-fit";
+  "rounded-[4px] text-white text-[12px] px-[8px] py-[4px] h-fit w-fit";
 
 const TodoItem = ({ item, getTasks }) => {
   const [editTitle, setEditTitle] = useState(item.title);
