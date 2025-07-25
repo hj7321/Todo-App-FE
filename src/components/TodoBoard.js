@@ -2,7 +2,7 @@ import TodoItem from "./TodoItem";
 
 const TodoBoard = ({ todoList, getTasks }) => {
   return (
-    <div>
+    <div className="mb-[40px]">
       <h2 className="font-bold text-[26px]">📝 TODO LIST</h2>
       <div className="flex flex-wrap gap-[15px] p-[10px]">
         {todoList.length > 0 ? (
