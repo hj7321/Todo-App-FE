@@ -83,19 +83,18 @@ const TodoItem = ({ item, getTasks }) => {
                   value={editPriority}
                   onChange={(e) => setEditPriority(Number(e.target.value))}
                   onBlur={() => setPriorityEdit(false)}
-                  className="outline-none border-none bg-transparent text-[11px]
-                           text-lg cursor-pointer appearance-none"
+                  className="outline-none border-none bg-transparent text-[12px] cursor-pointer appearance-none"
                   autoFocus
                 >
                   {[1, 2, 3, 4, 5].map((n) => (
-                    <option key={n} value={n}>
+                    <option key={n} value={n} className="text-[12px]">
                       {"⭐".repeat(n)}
                     </option>
                   ))}
                 </select>
               ) : (
                 <span
-                  className="text-[11px] text-yellow-400 cursor-pointer select-none"
+                  className="text-[12px] cursor-pointer select-none"
                   onMouseDown={(e) => {
                     e.preventDefault();
                     setPriorityEdit(true);
